@@ -95,7 +95,7 @@ The **labels** for each bigwig need to be in the same order as the bigwig files 
 
 
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415142024388.png" alt="image-20240415142024388" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/7b06e988-2785-4afa-ba41-7f23eded2dc5)
 
 
 
@@ -107,15 +107,16 @@ The bed files themselves (the file that has the positional information) need to 
 
 The first three columns corresponds to the chromosome, start, and end positions, and the fourth column is the name of that region. (if you are using a custom file and don't have specific names, just name them 1,2,3,4...etc )
 
-For the example of the DSB bed file:
+Bed file example:
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240227165530586.png" alt="image-20240227165530586" style="zoom:50%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/3beb1bb8-19b7-4d0d-8359-8965c86a920d)
 
 
 
 The labels for bed files follow the same rules as the bigwig files (i.e., **separated by a comma**)
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415142149598.png" alt="image-20240415142149598" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/dae9d583-1b43-4983-8169-03ad7f8a397b)
+
 
 ---------------------------------------------------------------------
 
@@ -129,11 +130,13 @@ The labels for bed files follow the same rules as the bigwig files (i.e., **sepa
 
 *Filename*: The name prefix of the final PDF plots. Try to add as much information as you can.
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415142300345.png" alt="image-20240415142300345" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/da84d310-3958-42a3-b7f3-8c1f03c39822)
+
 
 Then you can proceed to click ```Compute Matrix``` and wait until it is done. If the size of the bed file will affect the computational time. 
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240228141131918.png" alt="image-20240228141131918" style="zoom:50%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/39f018e0-8f22-4c19-88d4-9da6cef3eacd)
+
 
 -----------------------------------------
 
@@ -145,23 +148,27 @@ Then you can proceed to click ```Compute Matrix``` and wait until it is done. If
 
 Once your matrix is finishes calculating, navigate to the ```Heatmap``` tab.
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240228141949885.png" alt="image-20240228141949885" style="zoom: 67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/01fe77f7-5481-49a7-ac86-c324dc4c2fc6)
+
 
 ***Plot Title***: Title to go above the heatmap.
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415142620128.png" alt="image-20240415142620128" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/832cbded-ec7f-437b-914a-8bf9e8734b1a)
+
 
 ***Condition to order heatmap rows***: Which bigwig to order the heamap rows by signal to be applied to all other conditions. Needs to one of the bigwig labels that you originally entered when computing the matrix (In this case: ```Treated``` or ```Untreated```)
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415142720732.png" alt="image-20240415142720732" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/7e8e7d00-d14c-411e-b20c-eb06749fa85b)
+
 
 ***Bigwig order:*** the order which you want the regions to be represented.  Need to be the same as the bigwig file labels originally entered and need to be comma separated with no spaces (In this case, it will be: ```Untreated,Treated```)
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415142804148.png" alt="image-20240415142804148" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/394230c7-85ee-47e8-8edb-4eef0f646761)
+
 
 ***Bed file order:*** the order which you want the regions to be represented. Need to be the same as the bed file labels originally entered and need to be comma separated with no spaces (In this case, it will be: ```regions_of_interest,control_regions```)
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415142920166.png" alt="image-20240415142920166" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/da66fa70-3ff3-4ba9-9f71-23f617865d80)
 
 ***Colour palette:*** Select any brewer colour palette (https://r-graph-gallery.com/38-rcolorbrewers-palettes.html):
 
@@ -173,19 +180,21 @@ Colour palettes you can use:
 
 ***Switch Colour Palette direction***: Option to change the direction of the colour palette. Useful when using a diverging colour scale like "RdBu" which goes from red to white to blue. Changing the direction of this palette will force the colours to go from blue to white to red instead.
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415112009229.png" alt="image-20240415112009229" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/7f34aa9b-8c7b-4d6e-acfc-13289f5a4caf)
+
 
 
 
 ***Scale max/min value:*** Can be left as default or you can input any number to force the colour scale. Typing 'Default' will return the colour scale to it's original values.
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415112217069.png" alt="image-20240415112217069" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/c4846cad-a7c0-41c4-8c3e-79a861919dd5)
+
 
 
 
 Then select ```Make Heatmap```.
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415143123994.png" alt="image-20240415143123994" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/a938fe9b-cd36-4886-a331-4d9a1ad33fa7)
 
 
 
@@ -195,7 +204,8 @@ If you are happy with your plot, you can download the heatmap by changing the de
 
 The downloaded file will already have the pre-filled prefix that you have chosen, along with the window size and what type of plot it is.
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415143155837.png" alt="image-20240415143155837" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/f62b7b19-f19f-475c-bf42-cf13f26eefc3)
+
 
 -------------------------------------------
 
@@ -207,11 +217,13 @@ The Average Profile and Boxplot tabs have similar input options as the Heatmap. 
 
 ***Y-axis label:*** Change the label that will be shown on the y-axis of the plot
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415114027970.png" alt="image-20240415114027970" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/5c08ebeb-6ad6-4318-a663-ac8d63d7ac8a)
+
 
 ***Select Layout:*** This option allows you to decide whether you want to group the plot by condition, or by bed file. By default, the plot colours different conditions, and then splits the display by bed file, like so:
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415143251125.png" alt="image-20240415143251125" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/673ed192-8dae-4fab-96f3-b9e06bac3e31)
+
 
 
 
@@ -219,8 +231,7 @@ If we change the ```Select Layout``` option to ```variable```, we get the follow
 
 
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415143313474.png" alt="image-20240415143313474" style="zoom:67%;" />
-
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/58665a56-e36b-4a57-ae55-2a78c4fcec83)
 
 
 
