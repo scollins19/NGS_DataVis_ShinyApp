@@ -241,3 +241,11 @@ The options are the same for both average profiles and boxplots.
 When comparing 2 conditions and 1 bed file, the outputted p-val is a paired Wilcox test (aka. Wilcoxon signed-rank test)
 
 When comparing 1 condition and 2 bed files, the outputted p-val is an unpaired Wilcox test (aka. Wilcoxon rank sum test, aka Mann-Whitney test)
+
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/bd306b8c-285c-4403-99be-30a111fd25f0)
+
+
+
+------------------------------------------------------------
+
+
