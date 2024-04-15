@@ -86,7 +86,8 @@ volumes <- c(DATA_HOME='/home/DATA/')
 
 Input bigwigs can be directly selected using the file finder.
 
-<img src="/home/scollins/.config/Typora/typora-user-images/image-20240415141825075.png" alt="image-20240415141825075" style="zoom:67%;" />
+![image](https://github.com/scollins19/NGS_DataVis_ShinyApp/assets/44778109/01d861c6-8d12-4a55-ae7e-65c45aea90e6)
+
 
 The bigwigs that you have selected will appear underneath.
 
